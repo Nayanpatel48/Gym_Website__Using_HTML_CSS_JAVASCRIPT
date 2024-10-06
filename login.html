@@ -11,33 +11,28 @@
   <div class="wrapper">
     <form action="">
       <h1>Login </h1>
-      <img src="/assets/logo.png" alt="">
+      
       <div class="input-box">
-        <input type="text" placeholder="Username" required>
+        <input type="text" placeholder="Email" required id="email-login">
         <i class='bx bxs-user'></i>
       </div>
+
       <div class="input-box">
-        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Password" required id="user-password-login">
         <i class='bx bxs-lock-alt' ></i>
       </div>
-      <div class="remember-forgot">
-        <label><input type="checkbox">Remember Me</label>
-        <a href="#">Forgot Password</a>
+
+      <div class="register-link">
+        <p>Forgot password? <a href="resetPassword.html" id="register-link">Reset</a></p>
       </div>
-      <button type="submit" class="btn">Login</button>
+
+      <button type="submit" class="btn" id="login-btn">Login</button>
+
       <div class="register-link">
         <p>Don't have an account? <a href="signup.html" id="register-link">Register</a></p>
       </div>
-    </form>
+    </form>  
   </div>
-
-  <script>
-    document.getElementById('register-link').addEventListener('click', function(event) {
-      event.preventDefault(); // Prevent the default anchor behavior
-      window.location.href = 'signup.html'; // Redirect to the signup page
-    });
-  </script>
-  
-
+  <script type="module" src="login_auth.js"></script>
 </body>
 </html>
